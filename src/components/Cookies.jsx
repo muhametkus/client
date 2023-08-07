@@ -28,7 +28,7 @@ function Cookies() {
             <p>Web sitemizi ziyaret ettiğinizde çerezler kullanılmaktadır. Çerezler, web sitemizi daha etkin bir şekilde kullanabilmeniz ve deneyiminizi geliştirebilmemiz için kullanılır. Çerezler hakkında daha fazla bilgi almak için <Link to="/cerezpolitikasi"> <b style={{color:'white', fontSize:'17px'}}>Çerez Politikamızı </b></Link>&nbsp; ziyaret edebilirsiniz.
 
 Web sitemizi kullanmaya devam ettiğinizde çerez kullanımını kabul etmiş sayılırsınız.</p>
-            <button className='alert-cookies-kapat-btn' >Kapat</button>
+            <button className='alert-cookies-kapat-btn' onClick={handleClose} >Kapat</button>
           </div>
 
           
