@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Pistonlu_comp() {
   return (
@@ -8,7 +9,7 @@ function Pistonlu_comp() {
       <div className="container py-lg-5 py-3">
         <h2 className="title">Pistonlu Kompresor</h2>
         <ul className="breadcrumbs-custom-path mt-2">
-          <li><a href="/">Anasayfa</a></li>
+          <li><Link to="/">Anasayfa</Link></li>
           <li className="active"><span className="fa fa-angle-double-right mx-2" aria-hidden="true" /> Ürünler &gt;&gt; Pistonlu Kompresor </li>
         </ul>
       </div>
@@ -26,74 +27,74 @@ function Pistonlu_comp() {
       <div className="row w3-services-grids">
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 1
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 2
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 3
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 4
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 5
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 causes-grid">
           <div className="causes-grid-info">
-            <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
-            <a href="#" className="cause-title-wrap">
+            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
+            <Link to="#" className="cause-title-wrap">
               <h4 className="cause-title">ÜRÜN 6
               </h4>
-            </a>
+            </Link>
             <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
             </p>
-            <a href="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</a>
+            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
           </div>
         </div>
       </div>

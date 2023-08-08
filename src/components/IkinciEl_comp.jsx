@@ -68,7 +68,7 @@ function IkinciEl_comp() {
           </div>
           <div className="col-lg-4 col-md-6 causes-grid">
             <div className="causes-grid-info">
-              <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
+              <a href="#"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
               <a href="#" className="cause-title-wrap">
                 <h4 className="cause-title">ÜRÜN 4
                 </h4>
@@ -80,7 +80,7 @@ function IkinciEl_comp() {
           </div>
           <div className="col-lg-4 col-md-6 causes-grid">
             <div className="causes-grid-info">
-              <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
+              <a href="#"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
               <a href="#" className="cause-title-wrap">
                 <h4 className="cause-title">ÜRÜN 5
                 </h4>
@@ -92,7 +92,7 @@ function IkinciEl_comp() {
           </div>
           <div className="col-lg-4 col-md-6 causes-grid">
             <div className="causes-grid-info">
-              <a href="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
+              <a href="#"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></a>
               <a href="#" className="cause-title-wrap">
                 <h4 className="cause-title">ÜRÜN 6
                 </h4>
