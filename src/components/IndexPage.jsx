@@ -41,7 +41,7 @@ function IndexPage() {
                   <div className="banner-info-bg">
                     <h5>Enerjide devrim yaratıyoruz</h5>
                     <div className="banner-buttons">
-                      <a className="btn btn-style btn-primary" href="hakkimizda">Hakkımızda</a>
+                      <Link className="btn btn-style btn-primary" to="/hakkimizda">Hakkımızda</Link>
                       <a href="#small-dialog" className="popup-with-zoom-anim play-view">
                         <span className="video-play-icon">
                           <span className="fa fa-play" />
@@ -67,7 +67,7 @@ function IndexPage() {
                   <div className="banner-info-bg">
                     <h5>Enerji &amp; <br /> Geleceğimizdir.</h5>
                     <div className="banner-buttons">
-                      <a className="btn btn-style btn-primary" href="hakkimizda">Katoloğumuzu incele</a>
+                      <Link className="btn btn-style btn-primary" to="/hakkimizda">Katoloğumuzu incele</Link>
                       <a href="#small-dialog1" className="popup-with-zoom-anim play-view">
                         <span className="video-play-icon">
                           <span className="fa fa-play" />
