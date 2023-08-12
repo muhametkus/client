@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Swal from "sweetalert2";
+import emailjs from '@emailjs/browser';
 
 function Iletisim_comp() {
 
+  const form =useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_y42vx2j', 'template_uleaasp', form.current, 'QhFxktQnY6PysEVWJ')
+      .then((result) => {
+          console.log(result.text);
+          form.current.reset(); 
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
+
+
+
   const mesaj_ilet=()=>{
-    const adSoyad=document.getElementById("adSoyad").value;
-    const telefon=document.getElementById("telefon").value;
-    const konu=document.getElementById("konu").value;
-    const mesaj=document.getElementById("mesaj").value;
-    if((adSoyad!="")&&(telefon!="")&&(konu!="")&&(mesaj!=""))
+    const adSoyad=document.getElementById("gonderen_adi").value;
+    const telefon=document.getElementById("gonderen_telefon").value;
+    const mail=document.getElementById("gonderen_mail").value;
+    const konu=document.getElementById("mail_konu").value;
+    const mesaj=document.getElementById("mesaj_icerik").value;
+    if((adSoyad!="")&&((telefon!="")||(mail!=""))&&(konu!="")&&(mesaj!=""))
     Swal.fire('Mesajınız İletildi.');
 
     else{
@@ -65,26 +86,29 @@ function Iletisim_comp() {
             <div className="title-content text-left">
               <h3 className="hny-title mb-lg-5 mb-4">Mesajınızı İletin</h3>
             </div>
-            <div className="signin-form">
+            <form className="signin-form" ref={form} onSubmit={sendEmail}>
               <div className="form-input">
-                <input type="text" name="adisoyadi" id="adSoyad" placeholder="İsim Soyisim" />
+                <input type="text" name="gonderen_adi" id="gonderen_adi" placeholder="İsim Soyisim" />
+              </div>
+              <div className="form-input">
+                <input type="text" name="gonderen_mail" id="gonderen_mail" placeholder="Mail Adresi" />
               </div>
               <div className="row con-two">
                 <div className="col-lg-6 form-input">
-                  <input type="tel" name="telefon" id="telefon" placeholder="Telefon numaranız" required />
+                  <input type="tel" name="gonderen_telefon" id="gonderen_telefon" placeholder="Telefon numaranız" required />
                 </div>
                 <div className="col-lg-6 form-input">
-                  <input type="text" name="konu" id='konu' placeholder="Konu" className="contact-input" />
+                  <input type="text" name="mail_konu" id='mail_konu' placeholder="Konu" className="contact-input" />
                 </div>
               </div>
               <div className="form-input">
-                <textarea placeholder="Mesajınız" name="mesaj" id="mesaj" required defaultValue={""} />
+                <textarea placeholder="Mesajınız" name="mesaj_icerik" id="mesaj_icerik" required defaultValue={""} />
               </div>
               <div className="submit-button text-lg-right">
                 <button onClick={mesaj_ilet} type="submit" value="gonder" className="btn btn-style">Gönder</button>
               </div>
 
-            </div>
+            </form>
           </div>
         </div>
       </div>
