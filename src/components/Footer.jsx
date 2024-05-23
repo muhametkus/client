@@ -69,7 +69,7 @@ function Footer() {
               <div className="col-lg-4 col-md-6 sub-one-left">
                 <h6>İletişim Bilgilerimiz</h6>
                 <div className="sub-contact-info">
-                  <p>Addres: Velibaba Mh. Günyüzü  Sk. No: 10/A
+                  <p>Adres: Sanayi Mh. Sanayi Cd. No:44 Kurtköy San. Sit. B/81<br/>
                     Pendik / İSTANBUL</p>
                   <p className="my-3">Tel: <strong><a href="tel:+902163970262">0 216 307 07 19</a></strong></p>
                   <p>GSM:<strong> <a href="tel:+905443566681">0 544 356 66 81</a></strong></p>
