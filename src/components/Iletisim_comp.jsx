@@ -75,7 +75,7 @@ function Iletisim_comp() {
                 <p> <a href="mailto:info@eymenkompresor.com">
                     info@eymenkompresor.com</a></p>
                 <h6 className="mt-4">Adres:</h6>
-                <p> Velibaba Mh. Günyüzü  Sk. No: 10/A
+                <p> Sanayi Mh. Sanayi Cd. No:44 Kurtköy San. Sit. B/81
                   Pendik / İSTANBUL</p>
                 <h6 className="mt-4">Telefon numaramız:</h6>
                 <p className="margin-top"><a href="tel:+(90) 544 356 66 81">0 544 356 66 81</a></p>
@@ -114,7 +114,7 @@ function Iletisim_comp() {
       </div>
     </div>
     <div className="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.771363635341!2d29.252751324778984!3d40.898829967946455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadb6accf2eb1d%3A0xe1d0c66a7c1944ab!2zVmVsaWJhYmEsIMSwxJ9kZSBTay4gTm86MTAsIDM0ODk2IFBlbmRpay_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1663925360727!5m2!1str!2str" frameBorder={0} allowFullScreen />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6540665005055!2d29.293487790103807!3d40.90140265217782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadbb682780647%3A0x2c7203bd211850a9!2sRamazano%C4%9Flu%2C%20Sanayi%20Cd.%20No%3A44%20D%3Ab%2C%2034906%20Pendik%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1716495854549!5m2!1str!2str" frameBorder={0} allowFullScreen />
     </div>
   </section>
 </div>
