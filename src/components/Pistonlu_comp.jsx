@@ -2,106 +2,50 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Pistonlu_comp() {
+  const products = Array.from({ length: 6 }, (_, i) => ({
+    id: i + 1,
+    name: `ÜRÜN ${i + 1}`,
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.'
+  }))
+
   return (
     <div>
-  <section className="w3l-about-breadcrumb position-relative text-center">
-    <div className="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
-      <div className="container py-lg-5 py-3">
-        <h2 className="title">Pistonlu Kompresor</h2>
-        <ul className="breadcrumbs-custom-path mt-2">
-          <li><Link to="/">Anasayfa</Link></li>
-          <li className="active"><span className="fa fa-angle-double-right mx-2" aria-hidden="true" /> Ürünler &gt;&gt; Pistonlu Kompresor </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  {/* //about breadcrumb */}
-  {/*/services-sec*/}
-  <div className="w3-services py-5">
-    <div className="container py-lg-4">
-      <div className="title-content text-left mb-lg-5 mb-4">
-        <h6 className="sub-title">ÜRÜNLERİMİZ</h6>
-        <h3 className="hny-title">Pistonlu Kompresor Katoloğumuz</h3>
-        <p />
-      </div>
-      <div className="row w3-services-grids">
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 1
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
+      <section className="page-header">
+        <div className="container">
+          <h1>Pistonlu Kompresör</h1>
+          <nav className="page-breadcrumb" aria-label="Sayfa yolu">
+            <Link to="/">Anasayfa</Link>
+            <span className="sep">/</span>
+            <Link to="/urunler">Ürünler</Link>
+            <span className="sep">/</span>
+            <span className="current">Pistonlu Kompresör</span>
+          </nav>
         </div>
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 2
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 3
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 4
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 5
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 causes-grid">
-          <div className="causes-grid-info">
-            <Link to="blog-single.html"><img src="assets/images/urun1.jpg" className="img-fuild" alt="" /></Link>
-            <Link to="#" className="cause-title-wrap">
-              <h4 className="cause-title">ÜRÜN 6
-              </h4>
-            </Link>
-            <p className="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio. 
-            </p>
-            <Link to="urunler" className="btn btn-style btn-primary mt-4">Ürünü İncele</Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      </section>
 
+      <div className="w3-services py-5">
+        <div className="container py-lg-4">
+          <div className="title-content text-center mb-lg-5 mb-4">
+            <h6 className="sub-title">Ürünlerimiz</h6>
+            <h3 className="hny-title">Pistonlu Kompresör Kataloğumuz</h3>
+          </div>
+          <div className="row">
+            {products.map(product => (
+              <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
+                <div className="causes-grid-info">
+                  <Link to="#"><img src="assets/images/urun1.jpg" alt={product.name} /></Link>
+                  <Link to="#" className="cause-title-wrap">
+                    <h4 className="cause-title">{product.name}</h4>
+                  </Link>
+                  <p className="card-text">{product.desc}</p>
+                  <Link to="#" className="btn-style mt-4">Ürünü İncele</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
