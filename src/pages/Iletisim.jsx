@@ -1,15 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Iletisim_comp from '../components/Iletisim_comp'
+import IletisimComp from '../components/Iletisim_comp'
 import Footer from '../components/Footer'
 
 function Iletisim() {
   return (
     <div>
-        <Navbar/>
-        <Iletisim_comp/>
-        <Footer/>
-    
+        <Navbar />
+        <IletisimComp />
+        <Footer />
     </div>
   )
 }

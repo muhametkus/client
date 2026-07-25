@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Pistonlu_comp from '../components/Pistonlu_comp'
+import PistonluComp from '../components/Pistonlu_comp'
 import Footer from '../components/Footer'
 
-function Pistonlu_Urunler() {
+function PistonluUrunler() {
   return (
     <div>
-        <Navbar/>
-        <Pistonlu_comp/>
-        <Footer/>
+        <Navbar />
+        <PistonluComp />
+        <Footer />
     </div>
   )
 }
 
-export default Pistonlu_Urunler
+export default PistonluUrunler

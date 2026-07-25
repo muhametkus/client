@@ -1,18 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Vidali_comp from '../components/Vidali_comp'
+import VidaliComp from '../components/Vidali_comp'
 import Footer from '../components/Footer'
 
-function Vidali_Urunler() {
+function VidaliUrunler() {
   return (
     <div>
-        <Navbar/>
-        <Vidali_comp/>
-        <Footer/>
-
-
+        <Navbar />
+        <VidaliComp />
+        <Footer />
     </div>
   )
 }
 
-export default Vidali_Urunler
+export default VidaliUrunler
